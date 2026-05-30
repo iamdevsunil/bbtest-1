@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "BBRewardNodesConfig",
+  "sourceName": "contracts/BBP_RewardNodes.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea26469706673582212200ac336b3e86f564627a4c2f28d05a015a3e2af0beaed29a1360d553b486046e964736f6c63430008140033",
+  "deployedBytecode": "0x600080fdfea26469706673582212200ac336b3e86f564627a4c2f28d05a015a3e2af0beaed29a1360d553b486046e964736f6c63430008140033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "AmplifierLib",
+  "sourceName": "contracts/libraries/BBP_AmplifierLib.sol",
+  "abi": [],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea2646970667358221220e7b600d29cd936d7c2f19757a884da2f869cecbee18f4a9767b3a5cd08e50ccd64736f6c63430008140033",
+  "deployedBytecode": "0x600080fdfea2646970667358221220e7b600d29cd936d7c2f19757a884da2f869cecbee18f4a9767b3a5cd08e50ccd64736f6c63430008140033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

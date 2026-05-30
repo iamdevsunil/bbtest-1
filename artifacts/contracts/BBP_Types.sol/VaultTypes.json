@@ -1,0 +1,902 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "VaultTypes",
+  "sourceName": "contracts/BBP_Types.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "AddressBlocked",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AlreadyEnrolled",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "AlreadyPaused",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "BlockedSystemAddress",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CapReached",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ChildContractDetected",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ClaimCooldownActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ClaimsDisabled",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CooldownActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DailyClaimLimitReached",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "DailyDepositLimitReached",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EmergencyActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "EnrollGraceNotMet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "FirstClaimLocked",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "GenesisCannotStake",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "GenesisProtected",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ImpersonationDetected",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientAllowance",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientGas",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientUserBalance",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InsufficientVaultBalance",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidDecimals",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPair",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidPositionId",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidReferrer",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidRefillAmount",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "LaunchAlreadyFinalized",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "LifetimeStakeLimitReached",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "LiquidityTooLow",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MaxDepositExceeded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MaxDirectsReached",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MaxWithdrawExceeded",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "MinDepositNotMet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoRewardToClaim",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NoStakeToClaim",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotEOA",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotEnrolled",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotPaused",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NothingToClaim",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "OracleStale",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PositionLocked",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PositionNotActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "PriceImpactTooHigh",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ProtocolFlowMismatch",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ReferrerGraceNotMet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ReferrerNotActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ReferrerNotEnrolled",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RefillTimelockActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "RewardTimerActive",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SameBlockAction",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "SelfReferral",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "StakeGraceNotMet",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "TWAPDeviationTooHigh",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UnauthorizedCaller",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "WalletClaimBlocked",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "ZeroAddress",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "account",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "blocked",
+          "type": "bool"
+        }
+      ],
+      "name": "AddressBlockedSet",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "enum VaultTypes.AmplifierLevel",
+          "name": "level",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "AmplifierAchieved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "reason",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "amount",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "AnomalyAutoPause",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "singleCeiling",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint16",
+          "name": "spikeMult",
+          "type": "uint16"
+        }
+      ],
+      "name": "AnomalyConfigUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "totalUSDClaimed",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "totalBBSent",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "deductionUSD",
+          "type": "uint128"
+        }
+      ],
+      "name": "Claimed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "enabled",
+          "type": "bool"
+        }
+      ],
+      "name": "ClaimsToggled",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "by",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "EmergencyPaused",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "by",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "EmergencyUnpaused",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "tier",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "rewardUSD",
+          "type": "uint128"
+        }
+      ],
+      "name": "ExpansionAchieved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "tier",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "ExpansionTierAchieved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "tier",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "LifestyleTierAchieved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "usdtAmount",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "bbAmount",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "lpTokens",
+          "type": "uint128"
+        }
+      ],
+      "name": "LiquidityAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "positionId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "depositUSDT",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "depositBB",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "lockedPrice",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "capUSD",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint64",
+          "name": "unlockTime",
+          "type": "uint64"
+        }
+      ],
+      "name": "PositionCreated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "amount",
+          "type": "uint128"
+        }
+      ],
+      "name": "ProtocolFeePaid",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "source",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "level",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "amountUSD",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "enum VaultTypes.SkipReason",
+          "name": "reason",
+          "type": "uint8"
+        }
+      ],
+      "name": "ProtocolFlowToDAO",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "upline",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "source",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "level",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "amountUSD",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "amountBB",
+          "type": "uint128"
+        }
+      ],
+      "name": "ProtocolFlowToUpline",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "positionId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "amountUSD",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "amountBB",
+          "type": "uint128"
+        }
+      ],
+      "name": "ROIAccrued",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "rank",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "RankAchieved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "tier",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "part",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "amountUSD",
+          "type": "uint128"
+        }
+      ],
+      "name": "RewardPartReleased",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "tier",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "totalUSD",
+          "type": "uint128"
+        }
+      ],
+      "name": "RewardQueued",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "tier",
+          "type": "uint8"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "SalaryTierAchieved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "staker",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "referrer",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "StakerEnrolled",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint128",
+          "name": "amount",
+          "type": "uint128"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "VaultRefilled",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "wallet",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "blocked",
+          "type": "bool"
+        }
+      ],
+      "name": "WalletClaimBlockedSet",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x60808060405234601757603a9081601d823930815050f35b600080fdfe600080fdfea2646970667358221220e163815cd75ee94cc5db438e876bceeab6f5d8268f114d694e6b6dfdaece743364736f6c63430008140033",
+  "deployedBytecode": "0x600080fdfea2646970667358221220e163815cd75ee94cc5db438e876bceeab6f5d8268f114d694e6b6dfdaece743364736f6c63430008140033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

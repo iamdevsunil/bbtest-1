@@ -1,0 +1,805 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IBigBullVault",
+  "sourceName": "contracts/readers/BBP_Reader.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "anomalyPaused",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "expansionAchieverCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "expansionAchievers",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8",
+          "name": "tier",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint64",
+          "name": "achievedAt",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getDirect",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getDirectsCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "getPosition",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint128",
+              "name": "depositUSDT",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "capUSD",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "earnedUSD",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "claimedUSD",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "depositBB",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "lockedPrice",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "earnedBB",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "claimedBB",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint64",
+              "name": "stakeTime",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint64",
+              "name": "unlockTime",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint64",
+              "name": "lastROIUpdate",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint64",
+              "name": "lastClaimTime",
+              "type": "uint64"
+            },
+            {
+              "internalType": "uint128",
+              "name": "protocolBonusUSD",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "protocolStreamUSD",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "protocolFlowUSD",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "performanceTierUSD",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "expansionUSD",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "lifestyleUSD",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint8",
+              "name": "amplifierLevel",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bool",
+              "name": "active",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "capped",
+              "type": "bool"
+            },
+            {
+              "internalType": "bool",
+              "name": "isClosed",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct VaultTypes.Position",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getPositionCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getProtectedPriceView",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getReserves",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "bibReserve",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "usdtReserve",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "lastRewardClaimAt",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "launchFinalized",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "lifestyleAchieverCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "lifestyleAchievers",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8",
+          "name": "tier",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint64",
+          "name": "achievedAt",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "paused",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "rewardQueue",
+      "outputs": [
+        {
+          "internalType": "uint8",
+          "name": "tier",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint128",
+          "name": "totalUSD",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint8",
+          "name": "partsReleased",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint64",
+          "name": "lastEventTime",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "rewardQueueHead",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "rewardQueueLength",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "salaryAchieverCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "salaryAchievers",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        },
+        {
+          "internalType": "uint8",
+          "name": "tier",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint64",
+          "name": "achievedAt",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalActivePositions",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalDepositedUSD",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalDistributedBB",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalStakesCreated",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "totalUsers",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "users",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "referrer",
+          "type": "address"
+        },
+        {
+          "internalType": "uint32",
+          "name": "directsCount",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint32",
+          "name": "activeDirectsCount",
+          "type": "uint32"
+        },
+        {
+          "internalType": "uint128",
+          "name": "totalDepositUSD",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "totalEarnedUSD",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "totalClaimedUSD",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "currentCapUSD",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "totalDepositBB",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "totalClaimedBB",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "directBusinessUSD",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "teamVolumeUSD",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "strongestLegUSD",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "secondLegUSD",
+          "type": "uint128"
+        },
+        {
+          "internalType": "address",
+          "name": "strongestLegRoot",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "secondLegRoot",
+          "type": "address"
+        },
+        {
+          "internalType": "uint128",
+          "name": "pendingProtocolBonus",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "pendingProtocolStream",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "pendingProtocolFlow",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "pendingPerformanceTier",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "pendingExpansion",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint64",
+          "name": "enrolledAt",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint64",
+          "name": "firstDepositAt",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint64",
+          "name": "lastDepositAt",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint64",
+          "name": "lastClaimAt",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint64",
+          "name": "lastSalaryAccrualTime",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint64",
+          "name": "amplifierWindowStart",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint64",
+          "name": "amplifierWindowEnd",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint64",
+          "name": "lastClaimDay",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint128",
+          "name": "dailyClaimedUSD",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "workingEarnedUSD",
+          "type": "uint128"
+        },
+        {
+          "internalType": "bool",
+          "name": "isEnrolled",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "isCapped",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "isGenesis",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint8",
+          "name": "currentPerformanceRank",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint8",
+          "name": "highestPerformanceRank",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint8",
+          "name": "lifestyleAchieved",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint8",
+          "name": "highestExpansionTier",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bool",
+          "name": "silverAchieved",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "goldAchieved",
+          "type": "bool"
+        },
+        {
+          "internalType": "bool",
+          "name": "diamondAchieved",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint64",
+          "name": "silverAchievedAt",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint64",
+          "name": "goldAchievedAt",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint64",
+          "name": "diamondAchievedAt",
+          "type": "uint64"
+        },
+        {
+          "internalType": "uint128",
+          "name": "salaryCycleStartLegB",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint64",
+          "name": "salaryCycleStart",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,7 +1,5 @@
 node_modules/
-artifacts/
 cache/
-deployments/
 .env
 .env.local
 *.log
