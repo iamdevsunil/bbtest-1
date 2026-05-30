@@ -1,0 +1,20 @@
+{
+  "name": "bigbull-protocol",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:public": "hardhat run scripts/deploy.js --network bsc",
+    "verify": "hardhat run scripts/verify.js --network bsc",
+    "wallets": "node scripts/generate-wallets.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.10",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2",
+    "hardhat": "^2.22.10",
+    "solc": "0.8.20"
+  }
+}

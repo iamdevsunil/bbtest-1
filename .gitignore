@@ -1,0 +1,10 @@
+node_modules/
+artifacts/
+cache/
+deployments/
+.env
+.env.local
+*.log
+.DS_Store
+walletKeys-SECRET.csv
+walletKeys-*.csv
